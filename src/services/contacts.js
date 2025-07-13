@@ -18,8 +18,8 @@ export const getAllContacts = async ({
     contactsQuery.where('contactType').equals(filter.contactType);
   }
 
-  if (typeof filter.isFavorite === 'boolean') {
-    contactsQuery.where('isFavorite').equals(filter.isFavorite);
+  if (typeof filter.isFavourite === 'boolean') {
+    contactsQuery.where('isFavourite').equals(filter.isFavourite);
   }
 
   const [contactsCount, contacts] = await Promise.all([

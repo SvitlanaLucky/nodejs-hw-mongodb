@@ -32,7 +32,7 @@ export const authenticate = async (req, res, next) => {
   const user = await Users.findById(session.userId);
 
   if (!user) {
-    throw createHttpError(401, 'bad boy');
+    throw createHttpError(401, 'Oppps');
   }
 
   req.user = user;

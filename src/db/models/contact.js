@@ -18,7 +18,7 @@ const contactSchema = new Schema(
     email: {
       type: String,
     },
-    isFavorite: {
+    isFavourite: {
       type: Boolean,
       default: false,
     },
@@ -28,6 +28,7 @@ const contactSchema = new Schema(
       required: true,
       default: 'personal',
     },
+    photo: { type: String },
   },
   {
     timestamps: true,
